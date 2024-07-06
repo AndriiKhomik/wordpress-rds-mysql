@@ -4,7 +4,17 @@ variable "vpc_cidr" {
   type        = string
 }
 
-variable "subnet_cidr" {
-  description = "Subnets CIRDS"
+variable "subnet_cidr_public" {
+  description = "Subnets CIRDS Public"
   type        = list(string)
+}
+
+variable "subnet_cidr_private" {
+  description = "Subnets CIRDS Private"
+  type        = list(string)
+}
+
+variable "region" {
+  description = "AWS Deployment region"
+  type        = string
 }
